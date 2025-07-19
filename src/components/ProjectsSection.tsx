@@ -110,7 +110,7 @@ const ProjectsSection: React.FC = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">
+                    <span key={techIndex} className="bg-primary/10 text-[#8A0C1E] px-2 py-1 rounded-full text-xs">
                       {tech}
                     </span>
                   ))}
@@ -123,13 +123,6 @@ const ProjectsSection: React.FC = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <Button size="lg" className="px-8">
-            View All Projects
-          </Button>
         </div>
       </div>
     </section>

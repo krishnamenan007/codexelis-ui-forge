@@ -139,7 +139,7 @@ const ContactSection: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>123 Tech Street, Silicon Valley, CA 94025</span>
+                <span>Jaffna, Sri Lanka</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
@@ -147,12 +147,9 @@ const ContactSection: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>info@codexelis.com</span>
+                <span>codexelis@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-primary" />
-                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
-              </div>
+        
             </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -243,7 +240,7 @@ const ContactSection: React.FC = () => {
             <Button 
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-primary hover:bg-primary-dark text-primary-foreground py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-gradient-primary hover:opacity-90 text-primary-foreground px-8 py-4 text-lg shadow-elegant disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>

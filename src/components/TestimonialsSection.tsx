@@ -5,13 +5,13 @@ import { Card, CardContent } from './ui/card';
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      avatar: "J",
+      avatar: "/lovable-uploads/me.png",
       name: "John Smith",
       role: "CEO, TechCorp",
       content: "Codexelis transformed our business with their innovative IT solutions. Their expertise in cloud computing and AI integration has given us a competitive edge."
     },
     {
-      avatar: "S",
+      avatar: "/lovable-uploads/se.png",
       name: "Sarah Johnson",
       role: "CTO, InnovateTech",
       content: "The team at Codexelis delivered exceptional results. Their attention to detail and commitment to quality exceeded our expectations."
@@ -37,10 +37,10 @@ const TestimonialsSection: React.FC = () => {
             <Card key={index} className="p-6 border-0 shadow-card">
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
-                    {testimonial.avatar}
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                    <img src={testimonial.avatar} alt={testimonial.name} className="w-12 h-12" />
                   </div>
-                  <div className="flex text-primary">
+                  <div className="flex text-yellow-500">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-current" />
                     ))}
