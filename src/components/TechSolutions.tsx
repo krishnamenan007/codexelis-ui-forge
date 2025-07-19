@@ -62,11 +62,12 @@ const TechSolutions = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <Code className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-foreground">Codexelis</span>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/056f2621-2e27-4234-b7c7-d3a8b7849fd7.png" 
+                alt="Codexelis" 
+                className="h-10 w-auto"
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -577,11 +578,12 @@ const TechSolutions = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <Code className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <span className="text-xl font-bold text-foreground">Codexelis</span>
+              <div className="flex items-center">
+                <img 
+                  src="/lovable-uploads/056f2621-2e27-4234-b7c7-d3a8b7849fd7.png" 
+                  alt="Codexelis" 
+                  className="h-8 w-auto"
+                />
               </div>
               <p className="text-muted-foreground">
                 Your trusted partner in digital transformation. We deliver innovative IT solutions that drive business growth and success.
