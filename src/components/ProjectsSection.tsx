@@ -33,14 +33,14 @@ const ProjectsSection: React.FC = () => {
       liveUrl: "https://mathanelectronics.nz/"
     },
     {
-      name: "Arc Spazia",
+      name: "Arcspazia",
       icon: Globe,
       country: "LK",
       countryName: "Sri Lanka",
       countryColor: "bg-orange-500",
       bgGradient: "from-purple-500/20 to-purple-600/30",
       iconBg: "bg-purple-600",
-      title: "Arc Spazia Corporate Website",
+      title: "Arcspazia Corporate Website",
       description: "Modern corporate website with interactive features and responsive design for global reach.",
       technologies: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
       liveUrl: "https://arcspazia.com/"
@@ -49,7 +49,7 @@ const ProjectsSection: React.FC = () => {
 
   const stats = [
     { number: "10+", label: "Completed Projects" },
-    { number: "2", label: "Countries Served" },
+    { number: "5+", label: "Countries" },
     { number: "100%", label: "Client Satisfaction" }
   ];
 
@@ -57,8 +57,8 @@ const ProjectsSection: React.FC = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Our Projects Portfolio
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 font-title">
+            OUR PROJECTS PORTFOLIO
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We've successfully delivered 10+ innovative projects for clients across England, New Zealand, and globally. 
@@ -70,14 +70,14 @@ const ProjectsSection: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-              <p className="text-muted-foreground">{stat.label}</p>
+              <div className="text-4xl font-bold text-[#8A0C1E] mb-2">{stat.number}</div>
+              <p className="text-[#000D4C] font-bold">{stat.label}</p>
             </div>
           ))}
         </div>
 
         {/* Featured Projects */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <div className={`relative h-48 bg-gradient-to-br ${project.bgGradient} flex items-center justify-center`}>
@@ -110,7 +110,7 @@ const ProjectsSection: React.FC = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">
+                    <span key={techIndex} className="bg-primary/10 text-[#8A0C1E] px-2 py-1 rounded-full text-xs">
                       {tech}
                     </span>
                   ))}
@@ -123,13 +123,6 @@ const ProjectsSection: React.FC = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <Button size="lg" className="px-8">
-            View All Projects
-          </Button>
         </div>
       </div>
     </section>

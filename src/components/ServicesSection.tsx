@@ -12,51 +12,36 @@ import { Card, CardContent } from './ui/card';
 const ServicesSection: React.FC = () => {
   const services = [
     { 
-      icon: Lightbulb, 
-      title: "IT Consultation", 
-      desc: "Expert advice on digital transformation and technology strategy tailored to your business needs." 
+      image: "/lovable-uploads/8.png", 
+      title: "POS & Inventory Management System", 
+      desc: "POS and inventory management solutions to streamline your business operations." 
     },
     { 
-      icon: Code, 
-      title: "Software Development", 
-      desc: "Custom software solutions designed to meet your specific business requirements." 
+      image: "/lovable-uploads/7.png", 
+      title: "AI powered analytics & Admin Dashboards", 
+      desc: "Admin dashboards to manage your business operations and data." 
     },
     { 
-      icon: CloudUpload, 
-      title: "Cloud Solutions", 
-      desc: "Migrate, manage, and optimize your cloud infrastructure for maximum performance." 
+      image: "/lovable-uploads/10.png", 
+      title: "Database Management System ", 
+      desc: "Database management solutions to manage your business data." 
     },
-    { 
-      icon: Smartphone, 
-      title: "Mobile Development", 
-      desc: "Create powerful mobile applications that engage users across all platforms." 
-    },
-    { 
-      icon: BarChart3, 
-      title: "Data Analytics", 
-      desc: "Transform your data into actionable insights with our advanced analytics solutions." 
-    },
-    { 
-      icon: Settings, 
-      title: "IT Support", 
-      desc: "24/7 technical support to ensure your systems run smoothly without interruption." 
-    }
   ];
 
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Services We're Offering as Provider
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 font-title">
+            SERVICES WE'RE OFFERING AS PRODUCTS
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="p-6 border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <CardContent className="space-y-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center">
+                  <img src={service.image} alt={service.title} className="w-20 h-20" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground">{service.desc}</p>

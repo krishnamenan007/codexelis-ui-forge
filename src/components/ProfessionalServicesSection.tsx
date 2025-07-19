@@ -12,34 +12,34 @@ import { Card, CardContent } from './ui/card';
 const ProfessionalServicesSection: React.FC = () => {
   const services = [
     { 
-      icon: Lightbulb, 
+      image: "/lovable-uploads/15.png", 
       title: "Web Development", 
       desc: "Modern, responsive websites built with cutting-edge technologies." 
     },
     { 
-      icon: Smartphone, 
+      image: "/lovable-uploads/16.png", 
       title: "Mobile App Development", 
       desc: "Native and cross-platform mobile applications for iOS and Android." 
     },
     { 
-      icon: Shield, 
-      title: "Cybersecurity Services", 
-      desc: "Comprehensive security solutions to protect your digital assets." 
+      image: "/lovable-uploads/11.png", 
+      title: "AI Integrations", 
+      desc: "AI and Machine Learning solutions to automate tasks and improve efficiency." 
     },
     { 
-      icon: Cloud, 
-      title: "Cloud Migration", 
+      image: "/lovable-uploads/12.png", 
+      title: "Cloud Solutions", 
       desc: "Seamless migration to cloud platforms with minimal downtime." 
     },
     { 
-      icon: BarChart3, 
-      title: "Business Intelligence", 
-      desc: "Data-driven insights to make informed business decisions." 
+      image: "/lovable-uploads/13.png", 
+      title: "Search Engine Optimization", 
+      desc: "Optimize your website for search engines to improve visibility and traffic." 
     },
     { 
-      icon: Settings, 
-      title: "DevOps Solutions", 
-      desc: "Streamline your development and deployment processes." 
+      image: "/lovable-uploads/14.png", 
+      title: "Digital Marketing", 
+      desc: "Digital marketing services to increase your online presence and reach." 
     }
   ];
 
@@ -47,16 +47,16 @@ const ProfessionalServicesSection: React.FC = () => {
     <section className="py-20 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            All Professional Services
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-title">
+            ALL PROFESSIONAL SERVICES
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="p-6 bg-card/10 border-primary/20 text-primary-foreground">
               <CardContent className="space-y-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary-foreground" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center">
+                  <img src={service.image} alt={service.title} className="w-20 h-20" />
                 </div>
                 <h3 className="text-xl font-bold">{service.title}</h3>
                 <p className="text-primary-foreground/80">{service.desc}</p>

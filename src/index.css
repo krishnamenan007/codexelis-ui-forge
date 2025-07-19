@@ -41,7 +41,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(282 83% 58%));
+    /* --gradient-primary: linear-gradient(135deg, #000D4C, #000d4cdb); */
+    --gradient-secondary: linear-gradient(135deg, #8A0C1E, #8a0c1edb);
+    --gradient-primary: linear-gradient(135deg, #000D4C, #000d4cdb);
     --gradient-hero: linear-gradient(135deg, hsl(262 83% 95%), hsl(282 83% 95%));
     --shadow-elegant: 0 10px 30px -10px hsl(262 83% 58% / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(262 83% 58% / 0.1);
@@ -62,6 +64,10 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Font families */
+    --font-title: "Josefin Sans", sans-serif;
+    --font-body: "Quicksand", sans-serif;
   }
 
   .dark {
@@ -110,5 +116,67 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+}
+
+@layer components {
+  .font-title {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+/* Hero Blob Animation */
+.hero-blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(210 40% 96.1%) 100%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.1;
+  animation: morph 8s ease-in-out infinite;
+}
+
+/* .hero-float::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+  animation: float 20s ease-in-out infinite;
+} */
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+  }
+  75% {
+    border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg); 
+  }
+  50% { 
+    transform: translate(-50px, -50px) rotate(180deg); 
   }
 }

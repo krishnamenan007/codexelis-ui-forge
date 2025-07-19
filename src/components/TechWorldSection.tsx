@@ -1,45 +1,57 @@
 import React from 'react';
-import { Cloud, Shield, Bot } from 'lucide-react';
+import { CheckCircle, Code, User, Dna, Calendar, BarChart3 } from 'lucide-react';
+import { Button } from './ui/button';
+interface TechWorldSectionProps {
+  scrollToSection: (sectionId: string) => void;
+}
 
-const TechWorldSection: React.FC = () => {
-  const techAreas = [
-    {
-      icon: Cloud,
-      title: "Cloud Computing",
-      description: "Leverage the power of cloud technology to scale your business and improve efficiency."
-    },
-    {
-      icon: Shield,
-      title: "Cybersecurity",
-      description: "Protect your valuable data and systems with our advanced security solutions."
-    },
-    {
-      icon: Bot,
-      title: "AI Solutions",
-      description: "Harness the power of artificial intelligence to drive innovation and automation."
-    }
-  ];
+const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) => {
+
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Tech Change The World
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {techAreas.map((area, index) => (
-            <div key={index} className="text-center space-y-4">
-              <div className="w-20 h-20 bg-gradient-primary rounded-2xl mx-auto flex items-center justify-center">
-                <area.icon className="w-10 h-10 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground">{area.title}</h3>
-              <p className="text-muted-foreground">
-                {area.description}
-              </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - 3D Character and floating icons */}
+          <div className="relative">
+            <div className="relative w-full h-96 flex items-center justify-center">
+            
+              <img src="/lovable-uploads/20.png" alt="Tech World" className="w-[550px] h-[550px] rounded-2xl mt-10" />
             </div>
-          ))}
+          </div>
+
+          {/* Right side - Content */}
+          <div className="space-y-6 z-10">
+            <div>
+              <h3 className="text-sm font-medium text-blue-200 mb-2">BEST CHOICE</h3>
+              <h2 className="text-4xl lg:text-5xl font-bold text-white font-title mb-6">
+                Tech Change The World
+              </h2>
+            </div>
+            
+            <p className="text-blue-100 text-lg leading-relaxed">
+              Our company provides a full range of services for the construction of private houses and cottages, as well as comprehensive digital solutions for modern businesses.
+            </p>
+            
+            {/* <ul className="space-y-3 text-blue-100">
+              <li className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <span>We're a complete solutions to increase</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <span>We're a complete solutions to increase</span>
+              </li>
+            </ul> */}
+            
+            <Button 
+              size="lg" 
+              className="bg-gradient-primary hover:opacity-90 text-primary-foreground px-8 py-4 text-lg shadow-elegant"
+              onClick={() => scrollToSection('services')}
+            >
+              Explore Our Services
+            </Button>
+          </div>
         </div>
       </div>
     </section>
