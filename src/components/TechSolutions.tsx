@@ -24,7 +24,9 @@ import {
   Twitter,
   Linkedin,
   Instagram,
-  Heart
+  Heart,
+  ExternalLink,
+  Globe
 } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
@@ -299,6 +301,143 @@ const TechSolutions = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Our Projects Portfolio
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              We've successfully delivered 10+ innovative projects for clients across England, New Zealand, and globally. 
+              Here are some of our featured works showcasing our expertise in web development and management systems.
+            </p>
+          </div>
+
+          {/* Project Stats */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
+              <p className="text-muted-foreground">Completed Projects</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">2</div>
+              <p className="text-muted-foreground">Countries Served</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">100%</div>
+              <p className="text-muted-foreground">Client Satisfaction</p>
+            </div>
+          </div>
+
+          {/* Featured Projects */}
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Sterling Petroleum */}
+            <Card className="overflow-hidden border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+              <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-blue-600/30 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                    <Settings className="w-8 h-8 text-white" />
+                  </div>
+                  <p className="text-blue-700 font-semibold">Sterling Petroleum</p>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">🇬🇧 UK</span>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">Sterling Petroleum Website & Management System</h3>
+                <p className="text-muted-foreground mb-4">
+                  Complete web platform with advanced management system for petroleum operations in the UK.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">React</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Node.js</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">MongoDB</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">AWS</span>
+                </div>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://www.sterlingpetroleum.co.uk/" target="_blank" rel="noopener noreferrer">
+                    View Live Site <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Mathan Electronics */}
+            <Card className="overflow-hidden border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+              <div className="relative h-48 bg-gradient-to-br from-emerald-500/20 to-emerald-600/30 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-emerald-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                    <Smartphone className="w-8 h-8 text-white" />
+                  </div>
+                  <p className="text-emerald-700 font-semibold">Mathan Electronics</p>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <span className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold">🇳🇿 NZ</span>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">Mathan Electronics Platform & Management</h3>
+                <p className="text-muted-foreground mb-4">
+                  E-commerce platform with inventory management system for electronics retailer in New Zealand.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Vue.js</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Laravel</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">MySQL</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Stripe</span>
+                </div>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://mathanelectronics.nz/" target="_blank" rel="noopener noreferrer">
+                    View Live Site <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Arc Spazia */}
+            <Card className="overflow-hidden border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+              <div className="relative h-48 bg-gradient-to-br from-purple-500/20 to-purple-600/30 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-purple-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                    <Globe className="w-8 h-8 text-white" />
+                  </div>
+                  <p className="text-purple-700 font-semibold">Arc Spazia</p>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <span className="bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold">🌏 Global</span>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">Arc Spazia Corporate Website</h3>
+                <p className="text-muted-foreground mb-4">
+                  Modern corporate website with interactive features and responsive design for global reach.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Next.js</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">TypeScript</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Tailwind</span>
+                  <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs">Vercel</span>
+                </div>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://arcspazia.com/" target="_blank" rel="noopener noreferrer">
+                    View Live Site <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <Button size="lg" className="px-8">
+              View All Projects
+            </Button>
           </div>
         </div>
       </section>
