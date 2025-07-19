@@ -127,8 +127,8 @@ const ContactSection: React.FC = () => {
     <section id="contact" className="py-20 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">CONTACT WITH US</h2>
-          <h3 className="text-2xl lg:text-3xl mb-4">Contact Us</h3>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">CONTACT US</h2>
+          {/* <h3 className="text-2xl lg:text-3xl mb-4">Contact Us</h3> */}
         </div>
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">

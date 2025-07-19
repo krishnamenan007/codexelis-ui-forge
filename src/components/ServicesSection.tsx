@@ -12,35 +12,20 @@ import { Card, CardContent } from './ui/card';
 const ServicesSection: React.FC = () => {
   const services = [
     { 
-      icon: Lightbulb, 
+      image: "/lovable-uploads/8.png", 
       title: "IT Consultation", 
       desc: "Expert advice on digital transformation and technology strategy tailored to your business needs." 
     },
     { 
-      icon: Code, 
+      image: "/lovable-uploads/7.png", 
       title: "Software Development", 
       desc: "Custom software solutions designed to meet your specific business requirements." 
     },
     { 
-      icon: CloudUpload, 
+      image: "/lovable-uploads/10.png", 
       title: "Cloud Solutions", 
       desc: "Migrate, manage, and optimize your cloud infrastructure for maximum performance." 
     },
-    { 
-      icon: Smartphone, 
-      title: "Mobile Development", 
-      desc: "Create powerful mobile applications that engage users across all platforms." 
-    },
-    { 
-      icon: BarChart3, 
-      title: "Data Analytics", 
-      desc: "Transform your data into actionable insights with our advanced analytics solutions." 
-    },
-    { 
-      icon: Settings, 
-      title: "IT Support", 
-      desc: "24/7 technical support to ensure your systems run smoothly without interruption." 
-    }
   ];
 
   return (
@@ -55,8 +40,8 @@ const ServicesSection: React.FC = () => {
           {services.map((service, index) => (
             <Card key={index} className="p-6 border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <CardContent className="space-y-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center">
+                  <img src={service.image} alt={service.title} className="w-20 h-20" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground">{service.desc}</p>

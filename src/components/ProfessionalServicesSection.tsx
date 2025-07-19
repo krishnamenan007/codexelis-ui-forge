@@ -12,32 +12,32 @@ import { Card, CardContent } from './ui/card';
 const ProfessionalServicesSection: React.FC = () => {
   const services = [
     { 
-      icon: Lightbulb, 
+      image: "/lovable-uploads/15.png", 
       title: "Web Development", 
       desc: "Modern, responsive websites built with cutting-edge technologies." 
     },
     { 
-      icon: Smartphone, 
+      image: "/lovable-uploads/16.png", 
       title: "Mobile App Development", 
       desc: "Native and cross-platform mobile applications for iOS and Android." 
     },
     { 
-      icon: Shield, 
+      image: "/lovable-uploads/11.png", 
       title: "Cybersecurity Services", 
       desc: "Comprehensive security solutions to protect your digital assets." 
     },
     { 
-      icon: Cloud, 
+      image: "/lovable-uploads/12.png", 
       title: "Cloud Migration", 
       desc: "Seamless migration to cloud platforms with minimal downtime." 
     },
     { 
-      icon: BarChart3, 
+      image: "/lovable-uploads/13.png", 
       title: "Business Intelligence", 
       desc: "Data-driven insights to make informed business decisions." 
     },
     { 
-      icon: Settings, 
+      image: "/lovable-uploads/14.png", 
       title: "DevOps Solutions", 
       desc: "Streamline your development and deployment processes." 
     }
@@ -55,8 +55,8 @@ const ProfessionalServicesSection: React.FC = () => {
           {services.map((service, index) => (
             <Card key={index} className="p-6 bg-card/10 border-primary/20 text-primary-foreground">
               <CardContent className="space-y-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary-foreground" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center">
+                  <img src={service.image} alt={service.title} className="w-20 h-20" />
                 </div>
                 <h3 className="text-xl font-bold">{service.title}</h3>
                 <p className="text-primary-foreground/80">{service.desc}</p>

@@ -11,7 +11,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           <div className="space-y-8">
-            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium">
+            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-[#8A0C1E] font-medium">
               TRUSTED IT & TECH SOLUTION FOR YOU
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">

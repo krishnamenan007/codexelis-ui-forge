@@ -41,7 +41,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(282 83% 58%));
+    /* --gradient-primary: linear-gradient(135deg, #000D4C, #000d4cdb); */
+    --gradient-secondary: linear-gradient(135deg, #8A0C1E, #8a0c1edb);
+    --gradient-primary: linear-gradient(135deg, #000D4C, #000d4cdb);
     --gradient-hero: linear-gradient(135deg, hsl(262 83% 95%), hsl(282 83% 95%));
     --shadow-elegant: 0 10px 30px -10px hsl(262 83% 58% / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(262 83% 58% / 0.1);
