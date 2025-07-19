@@ -2,16 +2,18 @@ import React from 'react';
 import { Settings, Smartphone, Globe, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
+import ReactCountryFlag from "react-country-flag";
 
 const ProjectsSection: React.FC = () => {
   const projects = [
     {
       name: "Sterling Petroleum",
       icon: Settings,
-      country: "🇬🇧 UK",
+      country: "GB",
+      countryName: "United Kingdom",
       countryColor: "bg-green-500",
-      bgGradient: "from-blue-500/20 to-blue-600/30",
-      iconBg: "bg-blue-600",
+      bgGradient: "from-purple-500/20 to-purple-600/30",
+      iconBg: "bg-purple-600",
       title: "Sterling Petroleum Website & Management System",
       description: "Complete web platform with advanced management system for petroleum operations in the UK.",
       technologies: ["React", "Node.js", "MongoDB", "AWS"],
@@ -20,10 +22,11 @@ const ProjectsSection: React.FC = () => {
     {
       name: "Mathan Electronics",
       icon: Smartphone,
-      country: "🇳🇿 NZ",
+      country: "NZ",
+      countryName: "New Zealand",
       countryColor: "bg-blue-500",
-      bgGradient: "from-emerald-500/20 to-emerald-600/30",
-      iconBg: "bg-emerald-600",
+      bgGradient: "from-purple-500/20 to-purple-600/30",
+      iconBg: "bg-purple-600",
       title: "Mathan Electronics Platform & Management",
       description: "E-commerce platform with inventory management system for electronics retailer in New Zealand.",
       technologies: ["Vue.js", "Laravel", "MySQL", "Stripe"],
@@ -32,7 +35,8 @@ const ProjectsSection: React.FC = () => {
     {
       name: "Arc Spazia",
       icon: Globe,
-      country: "🌏 Global",
+      country: "LK",
+      countryName: "Sri Lanka",
       countryColor: "bg-orange-500",
       bgGradient: "from-purple-500/20 to-purple-600/30",
       iconBg: "bg-purple-600",
@@ -86,9 +90,17 @@ const ProjectsSection: React.FC = () => {
                   </p>
                 </div>
                 <div className="absolute top-4 right-4">
-                  <span className={`${project.countryColor} text-white px-2 py-1 rounded-full text-xs font-semibold`}>
-                    {project.country}
-                  </span>
+                  <div className= "p-1 rounded-full">
+                    <ReactCountryFlag
+                      countryCode={project.country}
+                      svg
+                      style={{
+                          width: '2em',
+                          height: '2em',
+                      }}
+                      title={project.countryName}
+                    />
+                  </div>
                 </div>
               </div>
               <CardContent className="p-6">
