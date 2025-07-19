@@ -23,23 +23,23 @@ const ProfessionalServicesSection: React.FC = () => {
     },
     { 
       image: "/lovable-uploads/11.png", 
-      title: "Cybersecurity Services", 
-      desc: "Comprehensive security solutions to protect your digital assets." 
+      title: "AI Integrations", 
+      desc: "AI and Machine Learning solutions to automate tasks and improve efficiency." 
     },
     { 
       image: "/lovable-uploads/12.png", 
-      title: "Cloud Migration", 
+      title: "Cloud Solutions", 
       desc: "Seamless migration to cloud platforms with minimal downtime." 
     },
     { 
       image: "/lovable-uploads/13.png", 
-      title: "Business Intelligence", 
-      desc: "Data-driven insights to make informed business decisions." 
+      title: "Search Engine Optimization", 
+      desc: "Optimize your website for search engines to improve visibility and traffic." 
     },
     { 
       image: "/lovable-uploads/14.png", 
-      title: "DevOps Solutions", 
-      desc: "Streamline your development and deployment processes." 
+      title: "Digital Marketing", 
+      desc: "Digital marketing services to increase your online presence and reach." 
     }
   ];
 
@@ -47,8 +47,8 @@ const ProfessionalServicesSection: React.FC = () => {
     <section className="py-20 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            All Professional Services
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-title">
+            ALL PROFESSIONAL SERVICES
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

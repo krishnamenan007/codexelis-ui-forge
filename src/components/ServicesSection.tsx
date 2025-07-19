@@ -13,18 +13,18 @@ const ServicesSection: React.FC = () => {
   const services = [
     { 
       image: "/lovable-uploads/8.png", 
-      title: "IT Consultation", 
-      desc: "Expert advice on digital transformation and technology strategy tailored to your business needs." 
+      title: "POS & Inventory Management System", 
+      desc: "POS and inventory management solutions to streamline your business operations." 
     },
     { 
       image: "/lovable-uploads/7.png", 
-      title: "Software Development", 
-      desc: "Custom software solutions designed to meet your specific business requirements." 
+      title: "AI powered analytics & Admin Dashboards", 
+      desc: "Admin dashboards to manage your business operations and data." 
     },
     { 
       image: "/lovable-uploads/10.png", 
-      title: "Cloud Solutions", 
-      desc: "Migrate, manage, and optimize your cloud infrastructure for maximum performance." 
+      title: "Database Management System ", 
+      desc: "Database management solutions to manage your business data." 
     },
   ];
 
@@ -32,8 +32,8 @@ const ServicesSection: React.FC = () => {
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Services We're Offering as Provider
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 font-title">
+            SERVICES WE'RE OFFERING AS PRODUCTS
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

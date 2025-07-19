@@ -24,8 +24,8 @@ const TechWorldSection: React.FC = () => {
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Tech Change The World
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 font-title">
+            TECH CHANGE THE WORLD
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

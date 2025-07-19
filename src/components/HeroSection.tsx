@@ -14,10 +14,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-[#8A0C1E] font-medium">
               TRUSTED IT & TECH SOLUTION FOR YOU
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-              Empowering Solutions with{' '}
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight font-title">
+              EMPOWERING SOLUTIONS WITH{' '}
               <span className="text-transparent bg-clip-text bg-gradient-primary">
-                Coding Evolution
+                CODING EVOLUTION
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
