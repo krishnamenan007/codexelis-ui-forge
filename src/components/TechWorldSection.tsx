@@ -16,7 +16,7 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
           <div className="relative">
             <div className="relative w-full h-96 flex items-center justify-center">
             
-              <img src="/lovable-uploads/20.png" alt="Tech World" className="w-[550px] h-[550px] rounded-2xl mt-10" />
+              <img src="/lovable-uploads/20.webp" alt="Tech World" className="w-[550px] h-[550px] rounded-2xl mt-10" />
             </div>
           </div>
 
