@@ -8,7 +8,7 @@ const ProjectsSection: React.FC = () => {
   const projects = [
     {
       name: "Sterling Petroleum",
-      icon: Settings,
+      image: "/lovable-uploads/Untitled design (18).png",
       country: "GB",
       countryName: "United Kingdom",
       countryColor: "bg-green-500",
@@ -81,14 +81,14 @@ const ProjectsSection: React.FC = () => {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <div className={`relative h-48 bg-gradient-to-br ${project.bgGradient} flex items-center justify-center`}>
-                <div className="text-center">
-                  <div className={`w-16 h-16 ${project.iconBg} rounded-xl mx-auto mb-4 flex items-center justify-center`}>
-                    <project.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <p className={`font-semibold ${project.iconBg === 'bg-blue-600' ? 'text-blue-700' : project.iconBg === 'bg-emerald-600' ? 'text-emerald-700' : 'text-purple-700'}`}>
+              
+                 
+                    <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+                 
+                  {/* <p className={`font-semibold ${project.iconBg === 'bg-blue-600' ? 'text-blue-700' : project.iconBg === 'bg-emerald-600' ? 'text-emerald-700' : 'text-purple-700'}`}>
                     {project.name}
-                  </p>
-                </div>
+                  </p> */}
+              
                 <div className="absolute top-4 right-4">
                   <div className= "p-1 rounded-full">
                     <ReactCountryFlag
