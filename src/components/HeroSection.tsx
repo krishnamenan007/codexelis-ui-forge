@@ -41,7 +41,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
             {/* Main Hero Image */}
             <div className="relative z-20 flex justify-center">
               <img 
-                src="/lovable-uploads/8378752a-a1ee-4b07-8757-b5b9aa51fa0f.png" 
+                src="/lovable-uploads/8378752a-a1ee-4b07-8757-b5b9aa51fa0f.webp" 
                 alt="IT professionals collaborating with innovation" 
                 className="w-full max-w-md h-auto drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />

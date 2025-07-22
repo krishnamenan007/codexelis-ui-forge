@@ -12,17 +12,17 @@ import { Card, CardContent } from './ui/card';
 const ServicesSection: React.FC = () => {
   const services = [
     { 
-      image: "/lovable-uploads/8.png", 
+      image: "/lovable-uploads/8.webp", 
       title: "POS & Inventory Management System", 
       desc: "POS and inventory management solutions to streamline your business operations." 
     },
     { 
-      image: "/lovable-uploads/7.png", 
+      image: "/lovable-uploads/7.webp", 
       title: "AI powered analytics & Admin Dashboards", 
       desc: "Admin dashboards to manage your business operations and data." 
     },
     { 
-      image: "/lovable-uploads/10.png", 
+      image: "/lovable-uploads/10.webp", 
       title: "Database Management System ", 
       desc: "Database management solutions to manage your business data." 
     },

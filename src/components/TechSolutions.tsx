@@ -38,7 +38,7 @@ const TechSolutions = () => {
       <Header scrollToSection={scrollToSection} />
       <HeroSection scrollToSection={scrollToSection} />
       <ExperienceSection />
-      <TechWorldSection />
+      <TechWorldSection scrollToSection={scrollToSection} />
       <ServicesSection />
       <ProfessionalServicesSection />
       <ProjectsSection />

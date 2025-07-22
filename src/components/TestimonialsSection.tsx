@@ -5,19 +5,19 @@ import { Card, CardContent } from './ui/card';
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      avatar: "/lovable-uploads/me.png",
+      avatar: "/lovable-uploads/me.webp",
       name: "John Smith",
       role: "CEO, TechCorp",
       content: "Codexelis transformed our business with their innovative IT solutions. Their expertise in cloud computing and AI integration has given us a competitive edge."
     },
     {
-      avatar: "/lovable-uploads/se.png",
+      avatar: "/lovable-uploads/se.webp",
       name: "Sarah Johnson",
       role: "CTO, InnovateTech",
       content: "The team at Codexelis delivered exceptional results. Their attention to detail and commitment to quality exceeded our expectations."
     },
     {
-      avatar: "M",
+      avatar: "/lovable-uploads/me.webp",
       name: "Mike Davis",
       role: "Founder, StartupXYZ",
       content: "Working with Codexelis was a game-changer for our startup. They helped us build a robust foundation for our digital platform."

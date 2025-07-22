@@ -12,32 +12,32 @@ import { Card, CardContent } from './ui/card';
 const ProfessionalServicesSection: React.FC = () => {
   const services = [
     { 
-      image: "/lovable-uploads/15.png", 
+      image: "/lovable-uploads/15.webp", 
       title: "Web Development", 
       desc: "Modern, responsive websites built with cutting-edge technologies." 
     },
     { 
-      image: "/lovable-uploads/16.png", 
+      image: "/lovable-uploads/16.webp", 
       title: "Mobile App Development", 
       desc: "Native and cross-platform mobile applications for iOS and Android." 
     },
     { 
-      image: "/lovable-uploads/11.png", 
+      image: "/lovable-uploads/11.webp", 
       title: "AI Integrations", 
       desc: "AI and Machine Learning solutions to automate tasks and improve efficiency." 
     },
     { 
-      image: "/lovable-uploads/12.png", 
+      image: "/lovable-uploads/12.webp", 
       title: "Cloud Solutions", 
       desc: "Seamless migration to cloud platforms with minimal downtime." 
     },
     { 
-      image: "/lovable-uploads/13.png", 
+      image: "/lovable-uploads/13.webp", 
       title: "Search Engine Optimization", 
       desc: "Optimize your website for search engines to improve visibility and traffic." 
     },
     { 
-      image: "/lovable-uploads/14.png", 
+      image: "/lovable-uploads/14.webp", 
       title: "Digital Marketing", 
       desc: "Digital marketing services to increase your online presence and reach." 
     }

@@ -5,17 +5,17 @@ import { Card, CardContent } from './ui/card';
 const ExperienceSection: React.FC = () => {
   const sections = [
     {
-      image: "/lovable-uploads/2.png",
+      image: "/lovable-uploads/2.webp",
       title: "Our Mission",
       description: "We do our best to make our working environment as comfortable as possible for our team and clients."
     },
     {
-      image: "/lovable-uploads/3.png",
+      image: "/lovable-uploads/3.webp",
       title: "About History",
       description: "We do our best to make our working environment as comfortable as possible for our team and clients."
     },
     {
-      image: "/lovable-uploads/4.png",
+      image: "/lovable-uploads/4.webp",
       title: "Our Vision",
       description: "We do our best to make our working environment as comfortable as possible for our team and clients."
     }
