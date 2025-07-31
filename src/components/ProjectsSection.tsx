@@ -8,7 +8,7 @@ const ProjectsSection: React.FC = () => {
   const projects = [
     {
       name: "Sterling Petroleum",
-      image: "/lovable-uploads/Untitled design (18).png",
+      image: "/lovable-uploads/sterling.png",
       country: "GB",
       countryName: "United Kingdom",
       countryColor: "bg-green-500",
@@ -21,7 +21,7 @@ const ProjectsSection: React.FC = () => {
     },
     {
       name: "Mathan Electronics",
-      icon: Smartphone,
+      image: "/lovable-uploads/mathanelec.png",
       country: "NZ",
       countryName: "New Zealand",
       countryColor: "bg-blue-500",
@@ -34,7 +34,7 @@ const ProjectsSection: React.FC = () => {
     },
     {
       name: "Arcspazia",
-      icon: Globe,
+      image: "/lovable-uploads/arcspazia.png",
       country: "LK",
       countryName: "Sri Lanka",
       countryColor: "bg-orange-500",
@@ -80,7 +80,7 @@ const ProjectsSection: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
-              <div className={`relative h-48 bg-gradient-to-br ${project.bgGradient} flex items-center justify-center`}>
+              <div className={`relative h-90 bg-gradient-to-br ${project.bgGradient} flex items-center justify-center`}>
               
                  
                     <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
