@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 font-title">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 tracking-tight font-title">
             OUR PROJECTS PORTFOLIO
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -67,10 +67,10 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Project Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-10 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl font-bold text-[#8A0C1E] mb-2">{stat.number}</div>
+              <div className="text-5xl font-bold text-[#8A0C1E] mb-2">{stat.number}</div>
               <p className="text-[#000D4C] font-bold">{stat.label}</p>
             </div>
           ))}

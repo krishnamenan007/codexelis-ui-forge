@@ -127,7 +127,7 @@ const ContactSection: React.FC = () => {
     <section id="contact" className="py-20 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">CONTACT US</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight font-title">CONTACT US</h2>
           {/* <h3 className="text-2xl lg:text-3xl mb-4">Contact Us</h3> */}
         </div>
         <div className="grid lg:grid-cols-2 gap-12">
@@ -240,7 +240,7 @@ const ContactSection: React.FC = () => {
             <Button 
               type="submit"
               disabled={isSubmitting}
-              className="bg-gradient-primary hover:opacity-90 text-primary-foreground px-8 py-4 text-lg shadow-elegant disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-white text-[#000d4a] hover:bg-[#000d4a]/80 hover:text-white px-8 py-4 text-lg shadow-elegant disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>

@@ -47,13 +47,13 @@ const ProfessionalServicesSection: React.FC = () => {
     <section className="py-20 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-title">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight font-title">
             ALL PROFESSIONAL SERVICES
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="p-6 bg-card/10 border-primary/20 text-primary-foreground">
+            <Card key={index} className="p-6 bg-card/10 border-primary/20 text-primary-foreground hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <CardContent className="space-y-4">
                 <div className="w-20 h-20 rounded-xl flex items-center justify-center">
                   <img src={service.image} alt={service.title} className="w-20 h-20" />

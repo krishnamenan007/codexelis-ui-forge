@@ -16,15 +16,19 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
           <div className="relative">
             <div className="relative w-full h-96 flex items-center justify-center">
             
-              <img src="/lovable-uploads/20.webp" alt="Tech World" className="w-[550px] h-[550px] rounded-2xl mt-10" />
+              <img 
+                src="/lovable-uploads/20.webp" 
+                alt="Tech World" 
+                className="w-[600px] h-[600px] rounded-2xl mt-10 animate-float-smooth hover:scale-110 transition-all duration-10000 hover:rotate-1" 
+              />
             </div>
           </div>
 
           {/* Right side - Content */}
           <div className="space-y-6 z-10">
             <div>
-              <h3 className="text-sm font-medium text-blue-200 mb-2">BEST CHOICE</h3>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white font-title mb-6">
+              <h3 className="inline-block text-sm px-2 py-1 bg-[#E4D6FB]/80 rounded-full text-[#8A0C1E] font-medium mb-2">BEST CHOICE</h3>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight font-title mb-6">
                 Tech Change The World
               </h2>
             </div>
@@ -32,21 +36,11 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
             <p className="text-blue-100 text-lg leading-relaxed">
               Our company provides a full range of services for the construction of private houses and cottages, as well as comprehensive digital solutions for modern businesses.
             </p>
-            
-            {/* <ul className="space-y-3 text-blue-100">
-              <li className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span>We're a complete solutions to increase</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span>We're a complete solutions to increase</span>
-              </li>
-            </ul> */}
+    
             
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:opacity-90 text-primary-foreground px-8 py-4 text-lg shadow-elegant"
+              className="bg-white text-[#000d4a] hover:bg-[#000d4a]/80 hover:text-white px-8 py-4 text-lg shadow-elegant"
               onClick={() => scrollToSection('services')}
             >
               Explore Our Services
