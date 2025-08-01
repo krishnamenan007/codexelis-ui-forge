@@ -24,7 +24,7 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
           <div className="space-y-6 z-10">
             <div>
               <h3 className="text-sm font-medium text-blue-200 mb-2">BEST CHOICE</h3>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white font-title mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight font-title mb-6">
                 Tech Change The World
               </h2>
             </div>

@@ -27,7 +27,7 @@ const ExperienceSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-start justify-between mb-16">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <h3 className="text-sm font-medium text-muted-foreground mb-2">WHY US?</h3>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground font-title">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight font-title">
               We've Been Thriving In 38 Years
             </h2>
           </div>
