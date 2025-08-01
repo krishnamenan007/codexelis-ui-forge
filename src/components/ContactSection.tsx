@@ -240,7 +240,7 @@ const ContactSection: React.FC = () => {
             <Button 
               type="submit"
               disabled={isSubmitting}
-              className="bg-gradient-primary hover:opacity-90 text-primary-foreground px-8 py-4 text-lg shadow-elegant disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-white text-[#000d4a] hover:bg-[#000d4a]/80 hover:text-white px-8 py-4 text-lg shadow-elegant disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>

@@ -67,10 +67,10 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Project Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-10 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl font-bold text-[#8A0C1E] mb-2">{stat.number}</div>
+              <div className="text-5xl font-bold text-[#8A0C1E] mb-2">{stat.number}</div>
               <p className="text-[#000D4C] font-bold">{stat.label}</p>
             </div>
           ))}
