@@ -14,12 +14,18 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - 3D Character and floating icons */}
           <div className="relative">
-            <div className="relative w-full h-96 flex items-center justify-center">
+            {/* Morphing Blob Animation */}
+            <div className="absolute inset-0 z-0">
+              <div className="tech-world-blob"></div>
+              <div className="hero-float"></div>
+            </div>
+            
+            <div className="relative w-full h-64 sm:h-80 lg:h-96 flex items-center justify-center z-20">
             
               <img 
                 src="/lovable-uploads/20.webp" 
                 alt="Tech World" 
-                className="w-[600px] h-[600px] rounded-2xl mt-10 animate-float-smooth hover:scale-110 transition-all duration-10000 hover:rotate-1" 
+                className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[610px] h-auto rounded-2xl mt-4 sm:mt-6 lg:mt-10" 
               />
             </div>
           </div>
@@ -27,7 +33,7 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
           {/* Right side - Content */}
           <div className="space-y-6 z-10">
             <div>
-              <h3 className="inline-block text-sm px-2 py-1 bg-[#E4D6FB]/80 rounded-full text-[#8A0C1E] font-medium mb-2">BEST CHOICE</h3>
+              <h3 className="inline-block text-sm  px-2 py-1 sm:px-2 sm:py-1 bg-[#E4D6FB]/80 rounded-full text-[#8A0C1E] font-medium sm: mb-10 sm:mb-4">BEST CHOICE</h3>
               <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight font-title mb-6">
                 Tech Change The World
               </h2>

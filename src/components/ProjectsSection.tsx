@@ -3,6 +3,7 @@ import { Settings, Smartphone, Globe, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import ReactCountryFlag from "react-country-flag";
+import { Link } from 'react-router-dom';
 
 const ProjectsSection: React.FC = () => {
   const projects = [
@@ -104,7 +105,9 @@ const ProjectsSection: React.FC = () => {
                 </div>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{project.title}</h3>
+                <Link to={`/project/${index}`} className="block">
+                  <h3 className="text-xl font-bold text-foreground mb-2 hover:text-primary transition-colors cursor-pointer">{project.title}</h3>
+                </Link>
                 <p className="text-muted-foreground mb-4">
                   {project.description}
                 </p>

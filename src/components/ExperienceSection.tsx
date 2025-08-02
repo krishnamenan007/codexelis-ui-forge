@@ -22,13 +22,13 @@ const ExperienceSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-10 bg-background">
+    <section id="about" className="py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start justify-between mb-16">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <h3 className="inline-block text-sm px-2 py-1 bg-primary/10 rounded-full text-[#8A0C1E] font-medium mb-2">WHY US?</h3>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight font-title">
-              We've Been Thriving In 38 Years
+              We've Been Thriving In 3+ Years
             </h2>
           </div>
           <div className="lg:w-1/3">

@@ -138,12 +138,77 @@ All colors MUST be HSL.
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(210 40% 96.1%) 100%);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   opacity: 0.1;
   animation: morph 8s ease-in-out infinite;
+}
+
+/* Responsive sizing for larger screens */
+@media (min-width: 768px) {
+  .hero-blob {
+    width: 400px;
+    height: 400px;
+  }
+  .tech-world-blob {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-blob {
+    width: 500px;
+    height: 500px;
+  }
+  .tech-world-blob {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* Tech World Purple Blob Animation */
+.tech-world-blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, hsl(280, 89%, 61%) 0%, hsl(312, 89%, 79%) 50%, hsl(308, 92%, 79%) 100%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.15;
+  animation: morph 8s ease-in-out infinite;
+  filter: blur(1px);
+  box-shadow: 
+    0 0 30px rgb(186, 126, 243),
+    0 0 60px rgba(184, 119, 245, 0.893),
+    0 0 90px rgba(161, 63, 253, 0.914);
+}
+
+/* Responsive sizing for larger screens */
+@media (min-width: 768px) {
+  .tech-world-blob {
+    width: 400px;
+    height: 400px;
+    box-shadow: 
+      0 0 40px rgb(186, 126, 243),
+      0 0 80px rgba(184, 119, 245, 0.893),
+      0 0 120px rgba(161, 63, 253, 0.914);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-world-blob {
+    width: 500px;
+    height: 500px;
+    box-shadow: 
+      0 0 50px rgb(186, 126, 243),
+      0 0 100px rgba(184, 119, 245, 0.893),
+      0 0 150px rgba(161, 63, 253, 0.914);
+  }
 }
 
 /* .hero-float::before {
