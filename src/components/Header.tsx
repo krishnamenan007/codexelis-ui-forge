@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
           </ul>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button className="bg-gradient-primary hover:opacity-90 text-primary-foreground">
+            <Button className="bg-gradient-primary hover:opacity-90 text-primary-foreground" onClick={() => scrollToSection('contact')}>
               Get Started
             </Button>
           </div>

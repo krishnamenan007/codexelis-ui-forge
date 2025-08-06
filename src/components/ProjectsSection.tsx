@@ -16,7 +16,7 @@ const ProjectsSection: React.FC = () => {
       bgGradient: "from-purple-500/20 to-purple-600/30",
       iconBg: "bg-purple-600",
       title: "Sterling Petroleum Website & Management System",
-      description: "Complete web platform with advanced management system for petroleum operations in the UK.",
+      description: "Complete advance daily log management system for daily petroleum operations in UK and landing website.",
       technologies: ["React", "Node.js", "MongoDB", "AWS"],
       liveUrl: "https://www.sterlingpetroleum.co.uk/"
     },
@@ -29,7 +29,7 @@ const ProjectsSection: React.FC = () => {
       bgGradient: "from-purple-500/20 to-purple-600/30",
       iconBg: "bg-purple-600",
       title: "Mathan Electronics Platform & Management",
-      description: "E-commerce platform with inventory management system for electronics retailer in New Zealand.",
+      description: "Complete advance Repair job and employee management system for daily job tracking and landing website",
       technologies: ["Vue.js", "Laravel", "MySQL", "Stripe"],
       liveUrl: "https://mathanelectronics.nz/"
     },
@@ -41,9 +41,9 @@ const ProjectsSection: React.FC = () => {
       countryColor: "bg-orange-500",
       bgGradient: "from-purple-500/20 to-purple-600/30",
       iconBg: "bg-purple-600",
-      title: "Arcspazia Corporate Website",
-      description: "Modern corporate website with interactive features and responsive design for global reach.",
-      technologies: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+      title: "Arcspazia Website & Search Engine Optimization",
+      description: "A visually immersive corporate website that reflects Arcspazia’s design philosophy and a responsive layout to engage a global audience.",
+      technologies: ["Next.js", "TypeScript", "Tailwind"],
       liveUrl: "https://arcspazia.com/"
     }
   ];
@@ -118,11 +118,21 @@ const ProjectsSection: React.FC = () => {
                     </span>
                   ))}
                 </div>
+                <div className="flex flex-row gap-2">
+              {project.name !== "Arcspazia" && (
+                <Button variant="outline" size="sm" asChild>
+                  <a href={`/project/${index}`} rel="noopener noreferrer">
+                    View Portfolio <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              )}
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     View Live Site <ExternalLink className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
+             
+                </div>
               </CardContent>
             </Card>
           ))}

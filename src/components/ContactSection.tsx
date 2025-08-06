@@ -143,7 +143,7 @@ const ContactSection: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+94 70 60 00 844</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
@@ -186,7 +186,7 @@ const ContactSection: React.FC = () => {
                 className={`w-full px-4 py-3 bg-background/10 border rounded-lg text-primary-foreground placeholder-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary ${
                   errors.email ? 'border-red-400 focus:ring-red-400' : 'border-primary/20'
                 }`}
-                placeholder="john@example.com"
+                placeholder="john@gmail.com"
               />
               {errors.email && (
                 <p className="text-red-400 text-sm mt-1 flex items-center">

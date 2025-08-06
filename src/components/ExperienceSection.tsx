@@ -7,17 +7,17 @@ const ExperienceSection: React.FC = () => {
     {
       image: "/lovable-uploads/2.webp",
       title: "Our Mission",
-      description: "We do our best to make our working environment as comfortable as possible for our team and clients."
+      description: "To empower businesses with scalable, efficient, and future-ready software solutions. We are committed to delivering excellence through collaboration, creativity, and clean code."
     },
     {
       image: "/lovable-uploads/3.webp",
       title: "About History",
-      description: "We do our best to make our working environment as comfortable as possible for our team and clients."
+      description: "Founded in 2021, Codexelis was born from a passion to redefine problem-solving through innovative technology. Over the past three years, we've helped clients across industries evolve digitally with powerful, custom-built software."
     },
     {
       image: "/lovable-uploads/4.webp",
       title: "Our Vision",
-      description: "We do our best to make our working environment as comfortable as possible for our team and clients."
+      description: "To be a catalyst for digital transformation by driving innovation through cutting-edge coding solutions. We envision a world where technology seamlessly evolves with human needs."
     }
   ];
 
@@ -28,7 +28,7 @@ const ExperienceSection: React.FC = () => {
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <h3 className="inline-block text-sm px-2 py-1 bg-primary/10 rounded-full text-[#8A0C1E] font-medium mb-2">WHY US?</h3>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight font-title">
-              We've Been Thriving In 3+ Years
+            We've Been Thriving for More Than 3 Years
             </h2>
           </div>
           <div className="lg:w-1/3">
@@ -39,7 +39,7 @@ const ExperienceSection: React.FC = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {sections.map((section, index) => (
-            <Card key={index} className="text-center p-8 border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+            <Card key={index} className="text-center p-8 border-0 shadow-card bg-[#F4E8FD] hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <CardContent className="space-y-4">
                 <div className="w-20 h-20 rounded-2xl mx-auto flex items-center justify-center">
                   <img src={section.image} alt={section.title} className="w-full" />

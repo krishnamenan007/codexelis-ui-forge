@@ -27,12 +27,12 @@ const ProfessionalServicesSection: React.FC = () => {
       desc: "AI and Machine Learning solutions to automate tasks and improve efficiency." 
     },
     { 
-      image: "/lovable-uploads/12.webp", 
-      title: "Cloud Solutions", 
-      desc: "Seamless migration to cloud platforms with minimal downtime." 
+      image: "/lovable-uploads/13.webp", 
+      title: "Design", 
+      desc: "UI/UX design, graphic design, post design, and branding solutions." 
     },
     { 
-      image: "/lovable-uploads/13.webp", 
+      image: "/lovable-uploads/12.webp", 
       title: "Search Engine Optimization", 
       desc: "Optimize your website for search engines to improve visibility and traffic." 
     },

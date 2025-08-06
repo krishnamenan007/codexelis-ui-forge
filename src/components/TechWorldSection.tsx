@@ -40,7 +40,7 @@ const TechWorldSection: React.FC<TechWorldSectionProps> = ({ scrollToSection }) 
             </div>
             
             <p className="text-blue-100 text-lg leading-relaxed">
-              Our company provides a full range of services for the construction of private houses and cottages, as well as comprehensive digital solutions for modern businesses.
+            Technology is reshaping industries, empowering ideas, and creating limitless possibilities. At Codexelis, we build smart, scalable solutions that drive innovation and fuel business growth. Join us in transforming the future together.
             </p>
     
             

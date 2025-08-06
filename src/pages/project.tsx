@@ -37,7 +37,7 @@ const Project = () => {
       description: "E-commerce platform with inventory management system for electronics retailer in New Zealand.",
       technologies: ["Vue.js", "Laravel", "MySQL", "Stripe"],
       liveUrl: "https://mathanelectronics.nz/",
-      longDescription: "A full-featured e-commerce platform built for Mathan Electronics, a leading electronics retailer in New Zealand. The platform includes advanced inventory management, customer relationship management, payment processing integration, and a responsive design that works seamlessly across all devices. The system also includes analytics and reporting tools for business insights."
+      longDescription: "A comprehensive digital solution designed for New Zealand's electronic repair industry, revolutionizing how repair shops manage customer jobs, technician workflows, and business operations through automated job tracking, communication, and reporting capabilities."
     },
     {
       id: 2,
