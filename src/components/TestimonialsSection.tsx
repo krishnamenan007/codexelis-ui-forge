@@ -6,21 +6,21 @@ const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
       avatar: "/lovable-uploads/me.png",
-      name: "John Smith",
-      role: "CEO, TechCorp",
+      name: "Mathan",
+      role: "CEO, Mathan Electronics",
       content: "Codexelis transformed our business with their innovative IT solutions. Their expertise in cloud computing and AI integration has given us a competitive edge."
     },
     {
       avatar: "/lovable-uploads/se.png",
-      name: "Sarah Johnson",
-      role: "CTO, InnovateTech",
+      name: "Mithusan Staislas",
+      role: "FP& Manager, Sterling Petroleum",
       content: "The team at Codexelis delivered exceptional results. Their attention to detail and commitment to quality exceeded our expectations."
     },
     {
       avatar: "/lovable-uploads/arc.png",
-      name: "Mike Davis",
-      role: "Founder, StartupXYZ",
-      content: "Working with Codexelis was a game-changer for our startup. They helped us build a robust foundation for our digital platform."
+      name: "Kaarunyan Sathyakumar",
+      role: "Founder, Arcspazia",
+      content: "Partnering with Codexelis was a turning point for our startup. Their expertise helped us build our digital platform, setting us up for long-term success."
     }
   ];
 

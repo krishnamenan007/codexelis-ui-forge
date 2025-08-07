@@ -22,16 +22,16 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
               Your trusted partner in digital transformation. We deliver innovative IT solutions that drive business growth and success.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/people/Codexelis/61566755556867/" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
+              <a href="" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/company/104813567" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
+              <a href="" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -48,10 +48,10 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
           <div>
             <h4 className="font-bold text-white mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white hover:text-primary transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-white hover:text-primary transition-colors">Mobile App Development</a></li>
-              <li><a href="#" className="text-white hover:text-primary transition-colors">AI Integrations</a></li>
-              <li><a href="#" className="text-white hover:text-primary transition-colors">Cloud Solutions</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="text-white hover:text-primary transition-colors">Web Development</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="text-white hover:text-primary transition-colors">Mobile App Development</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="text-white hover:text-primary transition-colors">AI Integrations</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="text-white hover:text-primary transition-colors">Design</a></li>
               {/* <li><a href="#" className="text-white hover:text-primary transition-colors">Digital Marketing</a></li>
               <li><a href="#" className="text-white hover:text-primary transition-colors">Search Engine Optimization</a></li> */}
             </ul>

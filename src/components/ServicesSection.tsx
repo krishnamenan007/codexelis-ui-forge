@@ -38,10 +38,10 @@ const ServicesSection: React.FC = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="p-6 border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+            <Card key={index} className="p-6 border-0 shadow-card bg-[#F4E8FD] hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <CardContent className="space-y-4">
                 <div className="w-20 h-20 rounded-xl flex items-center justify-center">
-                  <img src={service.image} alt={service.title} className="w-20 h-20" />
+                  <img src={service.image} alt={service.title} className="w-full" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground">{service.desc}</p>
