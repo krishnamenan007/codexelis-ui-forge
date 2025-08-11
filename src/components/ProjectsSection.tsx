@@ -121,9 +121,9 @@ const ProjectsSection: React.FC = () => {
                 <div className="flex flex-row gap-2">
               {project.name !== "Arcspazia" && (
                 <Button variant="outline" size="sm" asChild>
-                  <a href={`/project/${index}`} rel="noopener noreferrer">
+                  <Link to={`/project/${index}`}>
                     View Portfolio <ExternalLink className="w-4 h-4 ml-2" />
-                  </a>
+                  </Link>
                 </Button>
               )}
                 <Button variant="outline" size="sm" asChild>
