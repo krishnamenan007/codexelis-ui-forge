@@ -105,9 +105,9 @@ const ProjectsSection: React.FC = () => {
                 </div>
               </div>
               <CardContent className="p-6">
-                <Link to={`/project/${index}`} className="block">
+              
                   <h3 className="text-xl font-bold text-foreground mb-2 hover:text-primary transition-colors cursor-pointer">{project.title}</h3>
-                </Link>
+             
                 <p className="text-muted-foreground mb-4">
                   {project.description}
                 </p>
@@ -121,7 +121,7 @@ const ProjectsSection: React.FC = () => {
                 <div className="flex flex-row gap-2">
               {project.name !== "Arcspazia" && (
                 <Button variant="outline" size="sm" asChild>
-                  <Link to={`/project/${index}`}>
+                  <Link to={index === 0 ? "/sterling-petroleum" : index === 1 ? "/mathan-electronics" : "/arcspazia"}>
                     View Portfolio <ExternalLink className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
