@@ -9,6 +9,7 @@ import SterlingPetroleum from "./pages/sterling-petroleum";
 import MathanElectronics from "./pages/mathan-electronics";
 import Arcspazia from "./pages/arcspazia";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import GATracker from "./components/GATracker";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <GATracker />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sterling-petroleum" element={<SterlingPetroleum />} />
