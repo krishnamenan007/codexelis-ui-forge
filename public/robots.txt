@@ -1,14 +1,38 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# /public/robots.txt
+# Codexelis — https://www.codexelis.com
 
 User-agent: *
 Allow: /
+
+# Block Vercel internals
+Disallow: /_vercel/
+Disallow: /api/
+
+# Block utility pages
+Disallow: /404
+Disallow: /500
+
+# AI crawlers — allow all (supports GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap declaration
+Sitemap: https://www.codexelis.com/sitemap.xml

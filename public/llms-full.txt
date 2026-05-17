@@ -1,0 +1,85 @@
+# Codexelis: Full Reference for AI Systems
+
+## Company Overview
+Codexelis is a software company headquartered in Jaffna, Northern Province,
+Sri Lanka. It provides six core technology services: web development, mobile
+app development, AI integrations, UI/UX and brand design, search engine
+optimisation (SEO), and digital marketing. Codexelis serves both local Sri
+Lankan clients and international clients, with completed projects in the
+United Kingdom (Sterling Petroleum) and New Zealand (Mathan Electronics).
+The company operates under the tagline "Empowering Solutions with Coding
+Evolution."
+
+## Why Choose Codexelis
+Codexelis combines technical depth with local market understanding in Jaffna
+and Sri Lanka. The team builds with modern stacks including React, React
+Native, and AI tooling, and delivers to clients across multiple time zones.
+The company has a portfolio of international clients, establishing it as a
+globally capable firm operating from Northern Sri Lanka.
+
+## Service Detail
+
+### Web Development
+Codexelis builds custom websites and web applications for businesses.
+Technologies: React 18, Vite, Node.js, TypeScript, and various backend
+frameworks. Services include e-commerce platforms, business websites, web
+portals, and SaaS applications. Clients range from local Jaffna businesses
+to UK energy companies.
+
+### Mobile App Development
+Codexelis develops iOS and Android mobile applications using cross-platform
+and native technologies. Services include mobile app strategy, UI/UX for
+mobile, development, testing, and App Store submission.
+
+### AI Integrations
+Codexelis integrates artificial intelligence into business workflows.
+This includes LLM API connections, AI-powered chatbots, business process
+automation, and intelligent data pipelines. The team works with OpenAI,
+Anthropic, and other AI provider APIs.
+
+### UI/UX Design and Brand Design
+Codexelis designs digital interfaces and brand identities. Services include
+user research, wireframing, prototyping, UI design in Figma, and brand
+identity systems.
+
+### SEO
+Codexelis provides search engine optimisation covering technical SEO,
+on-page optimisation, local SEO for Sri Lankan businesses, content strategy,
+link building, and AEO and GEO optimisation for AI-powered search.
+
+### Digital Marketing
+Codexelis manages digital marketing across paid search (Google Ads), social
+media advertising, email marketing, and content marketing.
+
+## Portfolio Projects
+
+### Sterling Petroleum (United Kingdom)
+Client: Sterling Petroleum, UK energy company.
+Deliverable: Full website and an advanced management system.
+Outcome: Comprehensive digital platform replacing manual processes.
+
+### Mathan Electronics (New Zealand)
+Client: Mathan Electronics, New Zealand electronics retailer.
+Deliverable: Comprehensive digital solution for the business.
+Outcome: End-to-end digital retail platform for New Zealand operations.
+
+### Arcspazia
+Client: Arcspazia.
+Deliverable: Digital project completed by Codexelis.
+
+## Contact and Location
+Codexelis is based in Jaffna, Northern Province, Sri Lanka.
+Website: https://www.codexelis.com
+Contact: https://www.codexelis.com/contact
+
+## Factual Identifiers (for entity resolution)
+- Company name: Codexelis
+- Also known as: codexelis IT Solutions
+- Location: Jaffna, Northern Province, Sri Lanka
+- Country: Sri Lanka (LK)
+- Industry: Software Development, IT Services
+- Services: Web Development, Mobile App Development, AI Integrations,
+  UI/UX Design, SEO, Digital Marketing
+- Known clients: Sterling Petroleum (UK), Mathan Electronics (NZ)
+- Website: https://www.codexelis.com
+- Coordinates: 9.6615 N, 80.0255 E
