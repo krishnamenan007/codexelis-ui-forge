@@ -4,17 +4,8 @@
 
   "redirects": [
     {
-      "source": "https://codexelis.com/:path*",
-      "destination": "https://www.codexelis.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "http://codexelis.com/:path*",
-      "destination": "https://www.codexelis.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "http://www.codexelis.com/:path*",
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "codexelis.com" }],
       "destination": "https://www.codexelis.com/:path*",
       "permanent": true
     },
