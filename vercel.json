@@ -69,14 +69,9 @@
   ],
 
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/:path*" },
-    { "source": "/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/lovable-uploads/:path*", "destination": "/lovable-uploads/:path*" },
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/llms.txt", "destination": "/llms.txt" },
-    { "source": "/llms-full.txt", "destination": "/llms-full.txt" },
-    { "source": "/favicon.ico", "destination": "/favicon.ico" },
-    { "source": "/:path*", "destination": "/index.html" }
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
   ]
 }
