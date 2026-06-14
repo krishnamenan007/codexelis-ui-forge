@@ -70,7 +70,7 @@
 
   "rewrites": [
     {
-      "source": "/((?!api|assets|lovable-uploads|sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|favicon\\.ico).*)",
+      "source": "/:path((?!api|assets|lovable-uploads|sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|favicon\\.ico).*)",
       "destination": "/index.html"
     }
   ]
