@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import SterlingPetroleum from "./pages/sterling-petroleum";
 import MathanElectronics from "./pages/mathan-electronics";
 import Arcspazia from "./pages/arcspazia";
+import { LinktreePage } from "./pages/LinkTree";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import GATracker from "./components/GATracker";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/sterling-petroleum" element={<SterlingPetroleum />} />
           <Route path="/mathan-electronics" element={<MathanElectronics />} />
           <Route path="/arcspazia" element={<Arcspazia />} />
+          <Route path="/linktree/cinebee" element={<LinktreePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
